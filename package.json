@@ -2,11 +2,15 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "next build && netlify-lambda build netlify/"
   },
   "dependencies": {
+    "express": "^4.16.4",
+    "netlify-lambda": "^1.4.2",
     "next": "^8.0.1",
     "react": "^16.8.2",
-    "react-dom": "^16.8.2"
+    "react-dom": "^16.8.2",
+    "serverless-http": "^1.9.1"
   }
 }
