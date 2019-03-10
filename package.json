@@ -3,7 +3,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "deploy": "next build && netlify-lambda build lambda/"
+    "deploy": "next build && netlify-lambda build .",
+    "serve:local": "netlify-lambda build . && netlify-lambda serve ."
   },
   "dependencies": {
     "express": "^4.16.4",
